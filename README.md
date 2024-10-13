@@ -58,7 +58,7 @@ This is a Node.js and Express.js-based RESTful API for managing quizzes and user
    npm start
    ```
 
-   The application will start at \`http://localhost:3000\`.
+   The application will start at \`http://localhost:3000`.
 
 ---
 
@@ -67,7 +67,7 @@ This is a Node.js and Express.js-based RESTful API for managing quizzes and user
 ### User Authentication
 
 #### 1. **Register User**
-- **URL**: \`POST /api/auth/register\`
+- **URL**: \`POST http://localhost:3000/api/auth/register`
 - **Body**:
   ```json
   {
@@ -79,7 +79,7 @@ This is a Node.js and Express.js-based RESTful API for managing quizzes and user
 - **Response**: Returns user data and JWT token.
 
 #### 2. **Login User**
-- **URL**: \`POST /api/auth/login\`
+- **URL**: \`POST http://localhost:3000/api/auth/login`
 - **Body**:
   ```json
   {
@@ -92,7 +92,7 @@ This is a Node.js and Express.js-based RESTful API for managing quizzes and user
 ### Quiz Management
 
 #### 3. **Create a Quiz** (Requires Authentication)
-- **URL**: \`POST /api/quizzes\`
+- **URL**: \`POST http://localhost:3000/api/quizzes`
 - **Headers**: \`Authorization: Bearer <JWT_TOKEN>\`
 - **Body**:
   ```json
@@ -116,7 +116,7 @@ This is a Node.js and Express.js-based RESTful API for managing quizzes and user
 - **Response**: Returns the created quiz data.
 
 #### 4. **Get All Quizzes**
-- **URL**: \`GET /api/quizzes\`
+- **URL**: \`GET http://localhost:3000/api/quizzes\`
 - **Response**: Returns all available quizzes.
 
 #### 5. **Get Quiz Details**
@@ -124,7 +124,7 @@ This is a Node.js and Express.js-based RESTful API for managing quizzes and user
 - **Response**: Returns details of the specified quiz.
 
 #### 6. **Submit Quiz Answers**
-- **URL**: \`POST /api/quizzes/:id/submit\`
+- **URL**: \`POST http://localhost:3000/api/quizzes/:id/submit`
 - **Body**:
   ```json
   {
